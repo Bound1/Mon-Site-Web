@@ -1,0 +1,47 @@
+body{
+	/*Le fond du site web est bleu clair.*/
+	background-color: lightblue;
+}
+.margeDuCV{ 
+
+	/*On fait un bandeau pour la marge du CV sur lequel figure le nom,
+	le prénom, les coordonnées et les centres d'intérêts.*/
+	position:absolute;
+	width:33%;
+	height: 100%;
+	color:white;
+	background-color:darkblue;
+}
+
+.margeDuCV a{ 
+	/*On écrit les liens en rouge pour être visibles sur le fond bleu foncé de la marge.*/
+	color:red;
+}
+.coteDroitDuCV{
+	/*On utilise ce formatage pour le fond du CV . */
+	position : absolute;
+	top:0%;
+	left:34%;
+	width:66%;
+	height: 100%;
+}
+.nomEtPrenom{ 	
+	/*Formatage du nom et du prenom*/
+	font-weight: bold;
+	font-size: xx-large;
+}
+.rubriqueCV{
+	/*On écrit en blanc sur fond noir et en grand les rubriques du CV*/
+	background-color: black;
+	color:white;
+	font-size:x-large;
+}
+.underline {
+  text-decoration: underline;
+  font-size:x-large;
+}
+.imageDiplomesRendu{
+/* On paramètre la largeur et la hauteur des diplômes*/
+width:100%;
+height:90%;
+}

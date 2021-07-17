@@ -1,0 +1,7 @@
+﻿Stage IMS
+
+Réalisation d'une application mobile pédagogique lors de mon stage de 2ème année de DUT à l'aide de Javascript.
+
+Le but était de réaliser une application pour les élèves de l’IUT pour l’utilisation d’oscilloscope.
+Il s’agissait d’une application sur smartphone compilée ave PhoneGap qui utilise du HTML, du CSS et du Javascript.
+ Cette application génère un signal électronique qui est envoyé sur l’oscilloscope dont l’utilisation est testé l’aide d’un questionnaire. 
