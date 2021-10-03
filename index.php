@@ -9,7 +9,7 @@
 <?php
 /*On inclut l'arrière plan et on se connecte à la base de données*/
 include "arrierePlan.php";
-$bdd = new PDO('mysql:host=localhost;dbname=donnees_du_site;charset=utf8', 'root', '');
+$bdd = new PDO('mysql:host=boubacar.pelage.sql.free.fr;dbname=boubacar_pelage;charset=utf8', 'boubacar.pelage', 'boubacar1');
 ?>
 <!-- 
 On écrit les rubriques FORMATIONS et Diplômes.
@@ -28,7 +28,7 @@ On affiche les diplômes que je possède.
 <option value="null" selected>Veuillez choisir.</option>
 <?php
 	//donnees_diplomes correspond à la base de données des diplômes.
-	$contenu_complet_table_diplomes = $bdd->query('SELECT * FROM donnees_diplomes');
+	$contenu_complet_table_diplomes = $bdd->query('SELECT * FROM `donnees_diplomes`');
 	/*
 	On récupère nos données du diplôme (champ "diplomes") depuis la base de données
 	On les fait ensuite afficher dans le formulaire.
@@ -57,7 +57,7 @@ Veuillez choisir un domaine.
 	C'est-à-dire sur cette page.
 	On les fait ensuite afficher dans le formulaire.
 	*/
-	$contenu_complet_table_categorie = $bdd->query('SELECT categorie FROM donnees_certificats GROUP BY categorie');
+	$contenu_complet_table_categorie = $bdd->query('SELECT `categorie` FROM `donnees_certificats` GROUP BY `categorie`');
 	while($donnees = $contenu_complet_table_categorie->fetch()){
 		echo "<option value=\"". $donnees["categorie"]."\"".">". $donnees["categorie"]. "</option>";
 	}
@@ -82,7 +82,7 @@ echo "
 Veuillez choisir un certificat. <br>
 <select name=\"diplome\" >
 ";
-	$contenu_complet_table_certificats = $bdd->query('SELECT * FROM donnees_certificats ORDER BY categorie');
+	$contenu_complet_table_certificats = $bdd->query('SELECT * FROM `donnees_certificats` ORDER BY `categorie`');
 	while($donnees = $contenu_complet_table_certificats->fetch()){
 		if($_POST["categorieCertificat"]==$donnees["categorie"]){
 		echo "<option value=\"". $donnees["nom_fichier"]."\"".">". $donnees["diplomes"]. "</option>";
@@ -102,7 +102,7 @@ echo "
 <textarea rows="8" cols="100" disabled>
 <?php
 //On affiche les compétences dans la zone de texte.
-$contenu_complet_table_competences = $bdd->query('SELECT * FROM donnees_competences');
+$contenu_complet_table_competences = $bdd->query('SELECT * FROM `donnees_competences`');
 while($donnees = $contenu_complet_table_competences->fetch()){
 		echo "-" . $donnees["competences"] . "\n";
 }

@@ -16,4 +16,8 @@
 	<li> Programmation informatique</li>
 	<li> Basket</li>
 	</ul>
+	<div align="center">
+		<a href="https://github.com/Bound1/Mon-Site-Web">Lien vers le code de ce site.</a><br>
+		<a href="https://github.com/Bound1/JeuIdleBootcamp">Lien vers le code de mon jeu Idle.</a>
+	</div>
 </div>
