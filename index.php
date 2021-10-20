@@ -9,7 +9,7 @@
 <?php
 /*On inclut l'arrière plan et on se connecte à la base de données*/
 include "arrierePlan.php";
-$bdd = new PDO('mysql:host=boubacar.pelage.sql.free.fr;dbname=boubacar_pelage;charset=utf8', 'boubacar.pelage', 'boubacar1');
+$bdd = new PDO('mysql:host=localhost;dbname=boubacar_pelage;charset=utf8', 'root', '');
 ?>
 <!-- 
 On écrit les rubriques FORMATIONS et Diplômes.
