@@ -15,7 +15,7 @@ body{
 
 .margeDuCV a{ 
 	/*On écrit les liens en rouge pour être visibles sur le fond bleu foncé de la marge.*/
-	color:red;
+	color:orange;
 }
 .coteDroitDuCV{
 	/*On utilise ce formatage pour le fond du CV . */
